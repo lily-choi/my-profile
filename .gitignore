@@ -1,1 +1,43 @@
-node_modules
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Output of 'npm run build'
+/.next/
+/out/
+
+# .env files (environment variables)
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+*.log
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swn
+
+# macOS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Next.js automatically creates these folders
+public/static
