@@ -2,11 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Nav() {
-  const router = useRouter();
-
   const MENU = [
     {
       name: "Home",
@@ -27,12 +24,18 @@ export default function Nav() {
   ];
 
   return (
-    <header>
+    <header className="flex flex-wrap flex-row justify-between py-10 px-20">
+      <h1 className="font-semibold text-xl cursor-pointer">Hyeji Choi</h1>
       <ul className="flex flex-wrap flex-row justify-around">
         {MENU.map((menu, i) => {
           return (
-            <li key={i}>
-              <Link href={menu.page}>{menu.name}</Link>
+            <li key={i} className="px-6 last-of-type:pr-0 ">
+              <Link
+                href={menu.page}
+                className="text-gray-400 hover:text-gray-800"
+              >
+                {menu.name}
+              </Link>
             </li>
           );
         })}
