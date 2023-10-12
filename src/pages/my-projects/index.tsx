@@ -6,7 +6,7 @@ export default function MyProject() {
     <Layout>
       <section className="" style={{ margin: "auto 15%" }}>
         <h2 className="block text-2xl font-bold mb-7">Projects</h2>
-        <div className="flex flex-wrap flex-start justify-between">
+        <div className="flex flex-wrap flex-start justify-between cursor-pointer">
           {PROJECT_LIST.map((item, i) => {
             return (
               <div key={i} style={{ width: "47%", marginBottom: "80px" }}>
